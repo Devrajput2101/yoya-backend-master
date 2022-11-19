@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/bbc4cradle/public_html/yoyanew.thedigitalkranti.com/
+    - /bin/cp * $DEPLOYPATH
