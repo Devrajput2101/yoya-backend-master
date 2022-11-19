@@ -49,8 +49,8 @@
                            <?php foreach($jobprocess->result() as $key => $data) { ?>
                            <tr>
                               <td><a href="javascript: void(0);" class="text-body fw-bold">#<?= $key + 1 ?></a> </td>
-                              <td><?= $data->job_process_id ?></td>
-                              <td><?= $data->cities_id ?></td>
+                              <td><?= $data->job_process_name ?></td>
+                              <td><?= $data->city_name ?></td>
                               <td>
                                  <input type="checkbox" class="jobprocess-ststus" data-id="<?= $data->process_id ?>"<?= $data->job_process_status =="1" ? "checked" : "" ?> id="jobprocess<?= $key + 1 ?>" switch="info"/>
                                  <label for="jobprocess<?= $key + 1 ?>" data-on-label="Yes" data-off-label="No"></label>
